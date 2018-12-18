@@ -1,8 +1,6 @@
 <template>
-  <div class="facebook-login">
-    <button @click="buttonClicked">
-      <img :src="icon">
-    </button>
+  <div @click="buttonClicked">
+    <slot></slot>
   </div>
 </template>
 
