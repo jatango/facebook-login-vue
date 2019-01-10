@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.5"></a>
+## [2.1.5](https://github.com/JaTango/facebook-login-vue/compare/v2.1.4...v2.1.5) (2019-01-10)
+
+
+
 <a name="2.1.4"></a>
 ## [2.1.4](https://github.com/JaTango/facebook-login-vue/compare/v1.0.0...v2.1.4) (2019-01-10)
 
