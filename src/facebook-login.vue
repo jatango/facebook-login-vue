@@ -82,12 +82,14 @@ export default {
   },
   methods: {
     buttonClicked() {
-      this.$emit('click')
-      if (this.isConnected) {
-        this.logout()
-      } else {
-        this.login()
-      }
+      this.getFbLoginStatus().then(() => {
+        this.$emit('click')
+        if (this.isConnected) {
+          this.logout()
+        } else {
+          this.login()
+        }
+      })      
     },
     login() {
       this.isWorking = true
@@ -114,6 +116,10 @@ export default {
           this.$emit('logout', response)
         }
         )
+    },
+    getFbLoginStatus () {
+      return getFbLoginStatus()
+      .then(response => this.isConnected = response.status === 'connected')
     }
   }
 }
